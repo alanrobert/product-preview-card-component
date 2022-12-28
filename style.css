@@ -1,0 +1,152 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+h2, p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+.desktop_img {
+    visibility: hidden;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: hsl(158, 37%, 54%);
+}
+
+.add-to-cart-button {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    border-radius: .7rem;
+    background-color:hsl(158, 36%, 37%);
+    margin: 0 auto;
+}
+
+.add-to-cart-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 700;
+    color: hsl(30, 38%, 92%);
+    letter-spacing: .1rem;
+    margin-left: .5em;
+}
+
+.cart-icon {
+    width: 5%;
+    padding: 1em 0;
+}
+
+.mobile_img {
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+}
+
+.container {
+    margin: 0 auto;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: .7rem;
+}
+
+.primary_content {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.2em 0;
+}
+
+.secondary_heading {
+    font-size: .8rem;
+}
+
+.secondary_heading {
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+}
+
+.primary_heading {
+    font-size: 2rem;
+    margin: .9rem 0;
+    line-height: .95;
+}
+
+.body_text {
+    line-height: 1.6;
+    margin-bottom: .9rem;
+    font-size: .9rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.1rem;
+}
+
+.price_main {
+    color: hsl(158, 36%, 37%);
+}
+
+.small-price_strike-through {
+    font-size: .9rem;
+    text-decoration: line-through;
+    margin-left: 1rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 450px) {
+    
+    .row {
+        display: flex;
+    }
+
+    .container {
+        max-width: 45%;
+    }
+
+    .desktop_img {
+        visibility: visible;
+        display: block;
+        width: 25%;
+    }
+
+
+
+    .mobile_img {
+        visibility: hidden;
+    }
+
+
+}
