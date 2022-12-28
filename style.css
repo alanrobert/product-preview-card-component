@@ -2,11 +2,11 @@
 *::before, 
 *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: hsl(30, 38%, 92%);
 }
 
@@ -26,7 +26,7 @@ img {
 }
 
 .desktop_img {
-    visibility: hidden;
+    display: none;
 }
 
 button {
@@ -130,22 +130,38 @@ button:focus {
     
     .row {
         display: flex;
+        align-items: center;
     }
 
     .container {
-        max-width: 45%;
+        width: 45%;
+        margin: 120px auto;
+        display: flex;
+        align-items: center;
+        border-radius: .7rem;
+    }
+
+    .primary_content {
+        max-width: 50%;
+        padding: 1.5em;
+    }
+
+    .images {
+        width: 50%;
+        
     }
 
     .desktop_img {
         visibility: visible;
-        display: block;
-        width: 25%;
+        display: flex;
+        border-top-left-radius: .7rem;
+        border-bottom-left-radius: .7rem;
     }
 
-
+    
 
     .mobile_img {
-        visibility: hidden;
+        display: none;
     }
 
 
