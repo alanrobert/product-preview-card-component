@@ -30,9 +30,9 @@ Your users should be able to:
 
 ### Screenshot
 
-![Design preview for Desktop](./desktop_screenshot.jpg)
+![Design preview for Desktop](./desktop_screenshot.png)
 
-![Design preview for Mobile Devices](./mobile_screenshot.jpg)
+![Design preview for Mobile Devices](./mobile_screenshot.png)
 
 
 ### Links
@@ -59,6 +59,5 @@ I aim to fix this in the future but for now, I'm moving on to grid, to better un
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@alanrobert](https://www.frontendmentor.io/profile/alanrobert) there's nothin in here yet lol, as I'm not happy with every aspect of the end result but will be adding when fixed.
 
