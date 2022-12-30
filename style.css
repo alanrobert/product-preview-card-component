@@ -139,6 +139,7 @@ button:focus {
         display: flex;
         align-items: center;
         border-radius: .7rem;
+        max-width: 600px;
     }
 
     .primary_content {
