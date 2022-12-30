@@ -30,9 +30,9 @@ Your users should be able to:
 
 ### Screenshot
 
-![Design preview for Desktop](./screenshots/desktop_screenshot.pngdesktop_screenshot.png)
+![Design preview for Desktop](./screenshots/desktop_screenshot.png)
 
-![Design preview for Mobile Devices](./screenshots/mobile_screenshot.pngmobile_screenshot.png)
+![Design preview for Mobile Devices](./screenshots/mobile_screenshot.png)
 
 
 ### Links
