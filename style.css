@@ -1,3 +1,5 @@
+/* Globals */
+
 *, 
 *::before, 
 *::after {
@@ -29,6 +31,8 @@ img {
     display: none;
 }
 
+/* Buttons & Icons */
+
 button {
     all: unset;
     cursor: pointer;
@@ -46,6 +50,7 @@ button:focus {
     border-radius: .7rem;
     background-color:hsl(158, 36%, 37%);
     margin: 0 auto;
+    margin-top: 1.5rem;
 }
 
 .add-to-cart-link {
@@ -75,10 +80,12 @@ button:focus {
     border-radius: .7rem;
 }
 
+/* Typography */
+
 .primary_content {
     margin: 0 auto;
     width: 90%;
-    padding: 1.2em 0;
+    padding: 1.6rem 0;
 }
 
 .secondary_heading {
@@ -102,28 +109,32 @@ button:focus {
     font-size: .9rem;
 }
 
-.price {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.1rem;
-}
-
-.price_main {
-    color: hsl(158, 36%, 37%);
-}
-
-.small-price_strike-through {
-    font-size: .9rem;
-    text-decoration: line-through;
-    margin-left: 1rem;
-}
-
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Price */
+
+.price {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.price_main {
+    color: hsl(158, 36%, 37%);
+    margin: 0;
+}
+
+.small-price_strike-through {
+    font-size: .9rem;
+    text-decoration: line-through;
+    margin-left: 1rem;
 }
 
 @media (min-width: 450px) {
@@ -149,7 +160,6 @@ button:focus {
 
     .images {
         width: 100%;
-        
     }
 
     .desktop_img {
@@ -159,11 +169,7 @@ button:focus {
         border-bottom-left-radius: .7rem;
     }
 
-    
-
     .mobile_img {
         display: none;
     }
-
-
 }
