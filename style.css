@@ -1,3 +1,5 @@
+
+
 /* Globals */
 
 *, 
@@ -10,6 +12,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 h1 {
@@ -25,11 +32,18 @@ h2, p {
 
 img {
     width: 100%;
+    display: block;
 }
 
-.desktop_img {
-    display: none;
-}
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
 
 /* Buttons & Icons */
 
@@ -38,8 +52,9 @@ button {
     cursor: pointer;
 }
 
+button:hover,
 button:focus {
-    background-color: hsl(158, 37%, 54%);
+    background-color: hsl(158, 35%, 30%);
 }
 
 .add-to-cart-button {
@@ -51,34 +66,31 @@ button:focus {
     background-color:hsl(158, 36%, 37%);
     margin: 0 auto;
     margin-top: 1.5rem;
-}
-
-.add-to-cart-link {
-    text-decoration: none;
+    gap: .6rem;
     font-size: 1rem;
     font-family: 'Monsterrat', sans-serif;
     font-weight: 700;
     color: hsl(30, 38%, 92%);
-    letter-spacing: .1rem;
-    margin-left: .5em;
+    letter-spacing: .08rem;
+    padding: .75em 0;
 }
 
-.cart-icon {
-    width: 5%;
-    padding: 1em 0;
+.add-to-cart-button[data-icon="shopping-cart"]::before {
+    content: '';
+    background-image: url(images/icon-cart.svg);
+    width: 15px;
+    height: 16px;
 }
 
-.mobile_img {
-    border-top-left-radius: .7rem;
-    border-top-right-radius: .7rem;
-}
-
-.container {
+.card {
     margin: 0 auto;
     margin: 1em;
     background-color: #fff;
     border-radius: .7rem;
+    overflow: hidden;
 }
+
+
 
 /* Typography */
 
@@ -90,16 +102,12 @@ button:focus {
 
 .secondary_heading {
     font-size: .8rem;
-}
-
-.secondary_heading {
     letter-spacing: .4rem;
     text-transform: uppercase;
 }
 
 .primary_heading {
     font-size: 2rem;
-    margin: .9rem 0;
     line-height: .95;
 }
 
@@ -111,6 +119,7 @@ button:focus {
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    margin-top: 2em;
 }
 
 .attribution a { 
@@ -137,16 +146,14 @@ button:focus {
     margin-left: 1rem;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 600px) {
     
     .row {
         display: flex;
         align-items: center;
     }
 
-    .container {
-        width: 45%;
-        margin: 120px auto;
+    .card {
         display: flex;
         align-items: center;
         border-radius: .7rem;
@@ -156,20 +163,5 @@ button:focus {
     .primary_content {
         max-width: 50%;
         padding: 1.5em;
-    }
-
-    .images {
-        width: 100%;
-    }
-
-    .desktop_img {
-        visibility: visible;
-        display: flex;
-        border-top-left-radius: .7rem;
-        border-bottom-left-radius: .7rem;
-    }
-
-    .mobile_img {
-        display: none;
     }
 }

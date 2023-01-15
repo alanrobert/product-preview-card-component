@@ -11,15 +11,14 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Built with](#built-with)
   - [Continued development](#continued-development)
 - [Author](#author)
+- [Acknoledgements](#Acknoledgements)
 
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 Build out this product preview card component and get it looking as close to the design as possible.
 
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
@@ -39,6 +38,12 @@ Your users should be able to:
 
 ## My process
 
+I began by wrote the mark up for desktop then styled the card for small screens first the proceeded to style the large screens with less media queries. 
+
+I then went back and adjusted the markup for ATs. In future will be doing this from the start. 
+
+
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -49,14 +54,19 @@ Your users should be able to:
 
 ### Continued development
 
-Now learning css grid to help keep the responsive spacing between elements. One of the problems I faced was that the typography remained at the same size during the transition from mobile to desktop, as well as the images not resizing. 
+Now learning css grid to help keep the responsive spacing between elements.
 
-I think this may be due to the div I used for the img being restricted some how and also the media query that set the max width was targeting the background image instead of the container.
-
-I aim to fix this in the future but for now, I'm moving on to grid, to better understand how to handle such situations.
+Continuing to learn about writing proper semantics and assisted technologies. 
 
 
 ## Author
 
-- Frontend Mentor - [@alanrobert](https://www.frontendmentor.io/profile/alanrobert) there's nothin in here yet lol, as I'm not happy with every aspect of the end result but will be adding when fixed.
+- Frontend Mentor - [@alanrobert](https://www.frontendmentor.io/profile/alanrobert) 
 
+
+## Acknoledgements 
+
+Kevin Powell - Tutorial on this project which I viewed after I completed it myself. This really helped with making it more accessible to ATs. (https://www.kevinpowell.co/)
+
+Scott Ohara - Awesome visually hidden class which hides elements still in the DOM but still accessible to screen readers.
+(https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html)
