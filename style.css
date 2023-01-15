@@ -137,12 +137,13 @@ button:focus {
 
 .price_main {
     color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
     margin: 0;
 }
 
 .small-price_strike-through {
     font-size: .9rem;
-    text-decoration: line-through;
     margin-left: 1rem;
 }
 
